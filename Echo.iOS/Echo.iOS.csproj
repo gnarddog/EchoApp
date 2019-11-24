@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D3B7E1A5-0C0D-4659-9E3F-C08416F6B1ED}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Echo.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>Echo.iOS</AssemblyName>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARM64</MtouchArch>
+    <BuildIpa>True</BuildIpa>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Images\" />
+    <Folder Include="Resources\Images\Items\" />
+    <Folder Include="Resources\Images\Animals\" />
+    <Folder Include="Resources\Images\Numbers\" />
+    <Folder Include="Resources\Images\Numbers\1-10\" />
+    <Folder Include="Resources\Images\Numbers\1-20\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\singlestar.png" />
+    <BundleResource Include="Resources\Images\twostars.png" />
+    <BundleResource Include="Resources\Images\threestars.png" />
+    <BundleResource Include="Resources\Images\LOGO.png" />
+    <BundleResource Include="Resources\Images\tick.png" />
+    <BundleResource Include="Resources\Images\Logo_3D.png" />
+    <BundleResource Include="Resources\Images\ECHO LOGO.psd" />
+    <BundleResource Include="Resources\Images\Animals\pig.png" />
+    <BundleResource Include="Resources\Images\Animals\crab.png" />
+    <BundleResource Include="Resources\Images\Animals\squirrel.png" />
+    <BundleResource Include="Resources\Images\Animals\bear.png" />
+    <BundleResource Include="Resources\Images\Animals\cheetah.png" />
+    <BundleResource Include="Resources\Images\Animals\bird.png" />
+    <BundleResource Include="Resources\Images\Animals\cow.png" />
+    <BundleResource Include="Resources\Images\Animals\dog.png" />
+    <BundleResource Include="Resources\Images\Animals\cat.png" />
+    <BundleResource Include="Resources\Images\Animals\horse.png" />
+    <BundleResource Include="Resources\Images\Animals\tortoise.png" />
+    <BundleResource Include="Resources\Images\Animals\goat.png" />
+    <BundleResource Include="Resources\Images\Animals\rabbit.png" />
+    <BundleResource Include="Resources\Images\Items\scissors.png" />
+    <BundleResource Include="Resources\Images\Items\ruler.png" />
+    <BundleResource Include="Resources\Images\Items\pencil.png" />
+    <BundleResource Include="Resources\Images\Numbers\144.png" />
+    <BundleResource Include="Resources\Images\Numbers\132.png" />
+    <BundleResource Include="Resources\Images\Numbers\121.png" />
+    <BundleResource Include="Resources\Images\Numbers\120.png" />
+    <BundleResource Include="Resources\Images\Numbers\110.png" />
+    <BundleResource Include="Resources\Images\Numbers\108.png" />
+    <BundleResource Include="Resources\Images\Numbers\100.png" />
+    <BundleResource Include="Resources\Images\Numbers\99.png" />
+    <BundleResource Include="Resources\Images\Numbers\96.png" />
+    <BundleResource Include="Resources\Images\Numbers\90.png" />
+    <BundleResource Include="Resources\Images\Numbers\88.png" />
+    <BundleResource Include="Resources\Images\Numbers\84.png" />
+    <BundleResource Include="Resources\Images\Numbers\81.png" />
+    <BundleResource Include="Resources\Images\Numbers\80.png" />
+    <BundleResource Include="Resources\Images\Numbers\77.png" />
+    <BundleResource Include="Resources\Images\Numbers\72.png" />
+    <BundleResource Include="Resources\Images\Numbers\70.png" />
+    <BundleResource Include="Resources\Images\Numbers\64.png" />
+    <BundleResource Include="Resources\Images\Numbers\63.png" />
+    <BundleResource Include="Resources\Images\Numbers\60.png" />
+    <BundleResource Include="Resources\Images\Numbers\56.png" />
+    <BundleResource Include="Resources\Images\Numbers\54.png" />
+    <BundleResource Include="Resources\Images\Numbers\50.png" />
+    <BundleResource Include="Resources\Images\Numbers\49.png" />
+    <BundleResource Include="Resources\Images\Numbers\48.png" />
+    <BundleResource Include="Resources\Images\Numbers\45.png" />
+    <BundleResource Include="Resources\Images\Numbers\44.png" />
+    <BundleResource Include="Resources\Images\Numbers\42.png" />
+    <BundleResource Include="Resources\Images\Numbers\40.png" />
+    <BundleResource Include="Resources\Images\Numbers\Thirty Six.png" />
+    <BundleResource Include="Resources\Images\Numbers\Thirty Five.png" />
+    <BundleResource Include="Resources\Images\Numbers\Thirty Three.png" />
+    <BundleResource Include="Resources\Images\Numbers\Thirty Two.png" />
+    <BundleResource Include="Resources\Images\Numbers\Thirty.png" />
+    <BundleResource Include="Resources\Images\Numbers\Twenty Eight.png" />
+    <BundleResource Include="Resources\Images\Numbers\Twenty Seven.png" />
+    <BundleResource Include="Resources\Images\Numbers\Twenty Five.png" />
+    <BundleResource Include="Resources\Images\Numbers\Twenty Four.png" />
+    <BundleResource Include="Resources\Images\Numbers\Twenty Two.png" />
+    <BundleResource Include="Resources\Images\Numbers\Twenty One.png" />
+    <BundleResource Include="Resources\Images\Numbers\Twenty.png" />
+    <BundleResource Include="Resources\Images\Numbers\Eighteen.png" />
+    <BundleResource Include="Resources\Images\Numbers\Sixteen.png" />
+    <BundleResource Include="Resources\Images\Numbers\Fifteen.png" />
+    <BundleResource Include="Resources\Images\Numbers\Fourteen.png" />
+    <BundleResource Include="Resources\Images\Numbers\Twelve.png" />
+    <BundleResource Include="Resources\Images\Numbers\Eleven.png" />
+    <BundleResource Include="Resources\Images\Numbers\Ten.png" />
+    <BundleResource Include="Resources\Images\Numbers\Nine.png" />
+    <BundleResource Include="Resources\Images\Numbers\Eight.png" />
+    <BundleResource Include="Resources\Images\Numbers\Seven.png" />
+    <BundleResource Include="Resources\Images\Numbers\Six.png" />
+    <BundleResource Include="Resources\Images\Numbers\Five.png" />
+    <BundleResource Include="Resources\Images\Numbers\Four.png" />
+    <BundleResource Include="Resources\Images\Numbers\Three.png" />
+    <BundleResource Include="Resources\Images\Numbers\Two.png" />
+    <BundleResource Include="Resources\Images\Numbers\One.png" />
+    <BundleResource Include="Resources\Images\Numbers\Zero.png" />
+    <BundleResource Include="Resources\Images\Numbers\timestables.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\Echo\Echo.projitems" Label="Shared" />
+</Project>
